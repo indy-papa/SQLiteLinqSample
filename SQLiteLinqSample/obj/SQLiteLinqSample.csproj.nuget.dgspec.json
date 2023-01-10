@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SystemDevelopment\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj": {}
+    "G:\\GitHub\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj": {}
   },
   "projects": {
-    "D:\\SystemDevelopment\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj": {
+    "G:\\GitHub\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SystemDevelopment\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj",
+        "projectUniqueName": "G:\\GitHub\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj",
         "projectName": "SQLiteLinqSample",
-        "projectPath": "D:\\SystemDevelopment\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj",
-        "packagesPath": "C:\\Users\\i-uneno\\.nuget\\packages\\",
-        "outputPath": "D:\\SystemDevelopment\\SQLiteLinqSample\\SQLiteLinqSample\\obj\\",
+        "projectPath": "G:\\GitHub\\SQLiteLinqSample\\SQLiteLinqSample\\SQLiteLinqSample.csproj",
+        "packagesPath": "C:\\Users\\伊久磨\\.nuget\\packages\\",
+        "outputPath": "G:\\GitHub\\SQLiteLinqSample\\SQLiteLinqSample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\i-uneno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\伊久磨\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
