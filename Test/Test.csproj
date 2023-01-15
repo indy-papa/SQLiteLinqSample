@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="k0002001.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmFncBtn.cs">
       <SubType>Form</SubType>
     </Compile>
