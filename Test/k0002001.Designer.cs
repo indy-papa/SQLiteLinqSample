@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button8 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,13 +54,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sel = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.data_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kj_nam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kj_plc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.p_knd_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mmt_plc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mmt_day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -88,6 +83,21 @@
             this.label33 = new System.Windows.Forms.Label();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.sel = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.data_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kj_nam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kj_plc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.p_knd_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mmt_plc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mmt_day = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -343,6 +353,14 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sel,
@@ -351,7 +369,15 @@
             this.kj_plc,
             this.p_knd_id,
             this.mmt_plc,
-            this.mmt_day});
+            this.mmt_day,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dataGridView1.Name = "dataGridView1";
@@ -361,50 +387,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1460, 623);
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // sel
-            // 
-            this.sel.HeaderText = "選";
-            this.sel.Name = "sel";
-            this.sel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.sel.TrueValue = "1";
-            this.sel.Width = 30;
-            // 
-            // data_id
-            // 
-            this.data_id.HeaderText = "データID";
-            this.data_id.Name = "data_id";
-            this.data_id.ReadOnly = true;
-            this.data_id.Width = 80;
-            // 
-            // kj_nam
-            // 
-            this.kj_nam.HeaderText = "工事名称";
-            this.kj_nam.Name = "kj_nam";
-            this.kj_nam.Width = 248;
-            // 
-            // kj_plc
-            // 
-            this.kj_plc.HeaderText = "工事場所";
-            this.kj_plc.Name = "kj_plc";
-            this.kj_plc.Width = 248;
-            // 
-            // p_knd_id
-            // 
-            this.p_knd_id.HeaderText = "測点名";
-            this.p_knd_id.Name = "p_knd_id";
-            this.p_knd_id.Width = 121;
-            // 
-            // mmt_plc
-            // 
-            this.mmt_plc.HeaderText = "測定場所";
-            this.mmt_plc.Name = "mmt_plc";
-            this.mmt_plc.Width = 248;
-            // 
-            // mmt_day
-            // 
-            this.mmt_day.HeaderText = "測点日";
-            this.mmt_day.Name = "mmt_day";
             // 
             // checkBox7
             // 
@@ -747,6 +729,103 @@
             this.label34.Text = "元計画勾配";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // sel
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.NullValue = false;
+            this.sel.DefaultCellStyle = dataGridViewCellStyle2;
+            this.sel.HeaderText = "No.";
+            this.sel.Name = "sel";
+            this.sel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.sel.TrueValue = "1";
+            this.sel.Width = 35;
+            // 
+            // data_id
+            // 
+            this.data_id.HeaderText = "測点No.";
+            this.data_id.Name = "data_id";
+            this.data_id.ReadOnly = true;
+            this.data_id.Width = 60;
+            // 
+            // kj_nam
+            // 
+            this.kj_nam.HeaderText = "追加距離";
+            this.kj_nam.Name = "kj_nam";
+            this.kj_nam.Width = 65;
+            // 
+            // kj_plc
+            // 
+            this.kj_plc.HeaderText = "地盤高";
+            this.kj_plc.Name = "kj_plc";
+            this.kj_plc.Width = 65;
+            // 
+            // p_knd_id
+            // 
+            this.p_knd_id.HeaderText = "設定高";
+            this.p_knd_id.Name = "p_knd_id";
+            this.p_knd_id.Width = 65;
+            // 
+            // mmt_plc
+            // 
+            this.mmt_plc.HeaderText = "計画高";
+            this.mmt_plc.Name = "mmt_plc";
+            this.mmt_plc.Width = 65;
+            // 
+            // mmt_day
+            // 
+            this.mmt_day.HeaderText = "VCL";
+            this.mmt_day.Name = "mmt_day";
+            this.mmt_day.Width = 65;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "切盛高";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 65;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "地盤勾配";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 65;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "計画勾配";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 65;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "追加距離";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 65;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "VCL No.";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 65;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "設定勾配";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 65;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "元計画高";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 65;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "元計画勾配";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 80;
+            // 
             // k0002001
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -826,13 +905,6 @@
         private TextBox textBox5;
         private Label label5;
         private DataGridView dataGridView1;
-        private DataGridViewCheckBoxColumn sel;
-        private DataGridViewTextBoxColumn data_id;
-        private DataGridViewTextBoxColumn kj_nam;
-        private DataGridViewTextBoxColumn kj_plc;
-        private DataGridViewTextBoxColumn p_knd_id;
-        private DataGridViewTextBoxColumn mmt_plc;
-        private DataGridViewTextBoxColumn mmt_day;
         private CheckBox checkBox7;
         private TextBox textBox17;
         private Label label6;
@@ -862,5 +934,20 @@
         private Label label33;
         private TextBox textBox29;
         private Label label34;
+        private DataGridViewCheckBoxColumn sel;
+        private DataGridViewTextBoxColumn data_id;
+        private DataGridViewTextBoxColumn kj_nam;
+        private DataGridViewTextBoxColumn kj_plc;
+        private DataGridViewTextBoxColumn p_knd_id;
+        private DataGridViewTextBoxColumn mmt_plc;
+        private DataGridViewTextBoxColumn mmt_day;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
     }
 }
